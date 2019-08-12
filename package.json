@@ -15,7 +15,6 @@
   "dependencies": {
     "bootstrap": "^4.3.1",
     "dotenv": "^8.0.0",
-    "express": "^4.17.1",
     "gatsby": "^2.13.51",
     "gatsby-source-contentful": "^2.1.17",
     "gatsby-transformer-remark": "^2.6.11",
