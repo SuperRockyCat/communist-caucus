@@ -23,7 +23,7 @@ const HomePage = () => {
       <img className="p-2 w-50 h-50" alt={description} src={url} />
       <h1 className="p-2">{title}</h1>
       <small className="p-2" >Posted: {datePublished}</small>
-      <div className="p-2 w-76 text-justify" dangerouslySetInnerHTML={{__html: html}}/>
+      <div className="p-2 w-75 text-justify" dangerouslySetInnerHTML={{__html: html}}/>
     </div>
     </Layout>
     </>
