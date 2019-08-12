@@ -1,0 +1,8 @@
+# folders
+node_modules
+public
+.cache
+
+# files
+.env
+package-lock.json
