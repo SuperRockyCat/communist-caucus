@@ -1,6 +1,7 @@
 import React from "react"
 import Layout from "../components/layout"
 import { renderBlogPage } from "../hooks/blogPageQuery"
+import shortid from "shortid"
 
 
 const blogPage = () => {
@@ -16,7 +17,7 @@ const blogPage = () => {
             <small className="tags">
             <ul className="list-unstyled list-inline p-2">
                 Tags: {value.node.tags.map((value, index) => {
-                    return  <li className=" p-1 m-1 text-light bg-dark list-inline-item" key={index}>{value}</li>
+                    return  <a key={shortid.generate()} href="#"><li className=" p-1 m-1 text-light bg-dark list-inline-item" key={index}>{value}</li></a>
                 })}
             </ul>
             </small>

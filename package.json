@@ -21,7 +21,8 @@
     "jquery": "^3.4.1",
     "popper.js": "^1.15.0",
     "react": "^16.8.6",
-    "react-dom": "^16.8.6"
+    "react-dom": "^16.8.6",
+    "shortid": "^2.2.14"
   },
   "devDependencies": {
     "prettier": "^1.18.2"
