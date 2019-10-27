@@ -7,7 +7,7 @@ const dotenv = require("dotenv");
 
 if (process.env.ENVIRONMENT !== "production") {
   dotenv.config();
-} else 
+}
 
 const { CONTENTFUL_SPACE_ID, CONTENTFUL_ACCESS_TOKEN } = process.env
 
