@@ -1,28 +1,28 @@
 import { useStaticQuery, graphql } from "gatsby"
-export const renderHomePage = () => {
+export const useHomePageData = () => {
 
 const homePageData = useStaticQuery(
     graphql`
-    query HomePage {
-        allContentfulBlogPost(filter: {id: {eq: "f877039c-0280-53b5-a231-26c42ebc9664"}}) {
-          nodes {
-            title
-            datePublished(formatString: "MMM DD, YYYY HH:MM A")
-            content {
-              childMarkdownRemark {
-                html
-              }
-            }
-            image {
-              description
-              file {
-                url
-              }
+      query HomePage {
+        contentfulBlogPost(slug: {eq: "welcome-post"}) {
+          author
+          content {
+            childMarkdownRemark {
+              html
             }
           }
+          image {
+            file {
+              url
+            }
+            description
+          }
+          slug
+          tags
+          title
+          datePublished(formatString: "MMM DD, YYYY HH:MM A")
         }
-      }
-    `
+      }`
   )
-  return homePageData.allContentfulBlogPost.nodes[0]
+  return homePageData.contentfulBlogPost
 }

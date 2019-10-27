@@ -1,5 +1,5 @@
 import { useStaticQuery, graphql } from "gatsby"
-export const renderAboutPage = () => {
+export const useAboutPageData = () => {
 
 const aboutPageData = useStaticQuery(
     graphql`

@@ -1,11 +1,10 @@
 import React from "react"
 import Layout from "../components/layout"
-import { renderHomePage } from "../hooks/homePageQuery"
+import { useHomePageData } from "../hooks/homePageQuery"
 
 
 
-const HomePage = () => {
-  console.log("Render Homepage Output##: " + renderHomePage())
+const useRenderHomePage = () => {
   const {
     title,
     datePublished,
@@ -16,7 +15,7 @@ const HomePage = () => {
       description,
       file: {url}
     }
-  } = renderHomePage();
+  } = useHomePageData();
   return(
     <>
     <Layout>
@@ -30,4 +29,4 @@ const HomePage = () => {
     </>
   )};
 
-export default HomePage;
+export default useRenderHomePage;

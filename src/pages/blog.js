@@ -1,11 +1,11 @@
 import React from "react"
 import Layout from "../components/layout"
-import { renderBlogPage } from "../hooks/blogPageQuery"
+import { useBlogPostsData } from "../hooks/blogPageQuery"
 import shortid from "shortid"
 
 
-const blogPage = () => {
-    const postsArray = renderBlogPage();
+const useRenderBlogPage = () => {
+    const postsArray = useBlogPostsData();
     const posts = []
     
     for (const [index, value] of postsArray.entries()) {
@@ -35,4 +35,4 @@ const blogPage = () => {
     </>
     )};
 
-export default blogPage
+export default useRenderBlogPage

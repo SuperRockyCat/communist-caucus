@@ -1,14 +1,14 @@
 import React from "react"
 import Layout from "../components/layout"
-import { renderAboutPage } from "../hooks/aboutPageQuery"
+import { useAboutPageData } from "../hooks/aboutPageQuery"
 
-const contactPage = () => {
+const useRenderContactPage = () => {
     const {
         image: {
             description,
             file: {url}
         } 
-    } = renderAboutPage();
+    } = useAboutPageData();
     const buttonColor = {
         background : "#F0CBCA",
         border : "#F0CBCA"
@@ -52,4 +52,4 @@ const contactPage = () => {
     </>
     )};
 
-export default contactPage
+export default useRenderContactPage
