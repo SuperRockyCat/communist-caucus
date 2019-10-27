@@ -5,6 +5,7 @@ import { renderHomePage } from "../hooks/homePageQuery"
 
 
 const HomePage = () => {
+  console.log("Render Homepage Output##: " + renderHomePage())
   const {
     title,
     datePublished,
