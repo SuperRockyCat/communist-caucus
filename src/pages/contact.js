@@ -19,7 +19,7 @@ const useRenderContactPage = () => {
         <div className="d-flex flex-column align-items-center justify-content-center">
         <img className="p-2 w-50 h-50" alt={description} src={url} />
         <h1 className="p-2 row">Contact Us</h1>
-        <form method="post" action="https://formspree.io/rckola@mac.com" className="w-100">
+        <form method="post" action="https://formspree.io/dsacommunistcaucus@gmail.com" className="w-100">
             <div className="form-group row">
                 <div className="w-100 ">
                     <small><label htmlFor="inputEmail">Email address</label></small>
