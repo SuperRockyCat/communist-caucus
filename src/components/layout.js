@@ -11,14 +11,17 @@ const layout = ({ children }) => (
             <Link to="/" className="nav-link">Home</Link>
         </li>
         <li className="nav-item">
-            <Link to="/about" className="nav-link">About</Link>
-        </li>  
+            <Link to="/strat-2020" className="nav-link">Strategic Approaches 2020</Link>
+        </li>
         <li className="nav-item">
-            <Link to="/contact" className="nav-link">Contact</Link>
+            <Link to="/reading-list" className="nav-link">Reading List</Link>
         </li>
         <li className="nav-item">
             <Link to="/blog" className="nav-link">Blog</Link>
-        </li> 
+        </li>   
+        <li className="nav-item">
+            <Link to="/contact" className="nav-link">How Do I Join?</Link>
+        </li>
     </ul>
 </nav>
 <div className="container h-100">

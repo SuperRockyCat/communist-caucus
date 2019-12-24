@@ -4,7 +4,7 @@ export const useHomePageData = () => {
 const homePageData = useStaticQuery(
     graphql`
       query HomePage {
-        contentfulBlogPost(slug: {eq: "welcome-post"}) {
+        contentfulBlogPost(slug: {eq: "our-statement"}) {
           author
           content {
             childMarkdownRemark {
