@@ -1,14 +1,18 @@
 import React from "react"
 import Layout from "../components/layout"
-import { useAboutPageData } from "../hooks/aboutPageQuery"
+import { useContactPageData } from "../hooks/contactPageQuery"
 
 const useRenderContactPage = () => {
     const {
+        title,
+        content: {
+            childMarkdownRemark: {html}
+        },
         image: {
             description,
             file: {url}
         } 
-    } = useAboutPageData();
+    } = useContactPageData();
     const buttonColor = {
         background : "#F0CBCA",
         border : "#F0CBCA"
@@ -18,7 +22,8 @@ const useRenderContactPage = () => {
     <Layout>
         <div className="d-flex flex-column align-items-center justify-content-center">
         <img className="p-2 w-50 h-50" alt={description} src={url} />
-        <h1 className="p-2 row">Contact Us</h1>
+        <h1 className="p-2 row">{title}</h1>
+        <div className="p-2 w-100 text-justify" dangerouslySetInnerHTML={{__html: html}}/>
         <form method="post" action="https://formspree.io/dsacommunistcaucus@gmail.com" className="w-100">
             <div className="form-group row">
                 <div className="w-100 ">
