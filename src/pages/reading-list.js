@@ -1,9 +1,9 @@
 import React from "react"
 import Layout from "../components/layout"
-import { useAboutPageData } from "../hooks/aboutPageQuery"
+import { useReadingListData } from "../hooks/readingListQuery"
 
 
-const useRenderAboutPage = () => {
+const useRenderReadingList = () => {
     const {
         headline,
         content: {
@@ -13,7 +13,7 @@ const useRenderAboutPage = () => {
             description,
             file: {url}
         }
-    } = useAboutPageData();
+    } = useReadingListData();
     return(
     <>
     <Layout>
@@ -26,4 +26,4 @@ const useRenderAboutPage = () => {
     </>
     )}
 
-export default useRenderAboutPage;
+export default useRenderReadingList;

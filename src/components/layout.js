@@ -5,7 +5,7 @@ import "../styles/global.css"
 
 const layout = ({ children }) => (
 <>
-<nav className="navbar fixed-top navbar-expand-lg navbar-light navbar-light bg-light">
+<nav className="topnav navbar fixed-top navbar-expand-lg navbar-light navbar-light bg-light">
     <ul className="navbar-nav mr-auto">
         <li className="nav-item">
             <Link to="/" className="nav-link">Home</Link>
