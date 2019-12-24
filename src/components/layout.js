@@ -8,7 +8,7 @@ const layout = ({ children }) => (
 <nav className="topnav navbar fixed-top navbar-expand-lg navbar-light navbar-light bg-light">
     <ul className="navbar-nav mr-auto">
         <li className="nav-item">
-            <Link to="/" className="nav-link">Home</Link>
+            <Link to="/" className="nav-link">Our Statement</Link>
         </li>
         <li className="nav-item">
             <Link to="/strat-2020" className="nav-link">Strategic Approaches 2020</Link>
