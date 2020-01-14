@@ -1,4 +1,5 @@
 import React from "react"
+import { Link } from "gatsby"
 import Layout from "../components/layout"
 import { useBlogPostsData } from "../hooks/blogPageQuery"
 import shortid from "shortid"
@@ -22,7 +23,9 @@ const useRenderBlogPage = () => {
             </ul>
             </small>
             <div className="p-2 w-75 text-justify" 
-            dangerouslySetInnerHTML={{__html: value.node.content.childMarkdownRemark.html}} />
+            dangerouslySetInnerHTML={{__html: value.node.content.childMarkdownRemark.excerpt}} />
+            <p>-------------------------------------------------------------</p>
+            <p><Link to={value.node.slug}>View Full Post</Link></p>
         </div> 
         )
     };

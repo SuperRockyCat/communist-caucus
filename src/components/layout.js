@@ -14,7 +14,7 @@ const layout = ({ children }) => (
             <Link to="/strat-2020" className="nav-link">Strategic Approaches 2020</Link>
         </li>
         <li className="nav-item">
-            <Link to="/reading-list" className="nav-link">Reading List</Link>
+            <Link to="/list" className="nav-link">Reading List</Link>
         </li>
         <li className="nav-item">
             <Link to="/blog" className="nav-link">Blog</Link>

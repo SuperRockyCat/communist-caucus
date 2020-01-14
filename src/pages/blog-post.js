@@ -1,6 +1,6 @@
 import React from "react"
 import Layout from "../components/layout"
-import { graphql } from "gatsby"
+import { Link, graphql } from "gatsby"
 import shortid from "shortid"
 
 
@@ -28,6 +28,8 @@ const BlogPost = ({data}) => {
             </ul>
       </small>
       <div className="p-2 w-75 text-justify" dangerouslySetInnerHTML={{__html: html}}/>
+      <p>-------------------------------------------------------------</p>
+      <p><Link to="/blog">Return to Blog</Link></p>
     </div>
     </Layout>
     </>

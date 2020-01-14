@@ -17,11 +17,12 @@ const blogPageData = useStaticQuery(
             }
             content {
               childMarkdownRemark {
-                html
+                excerpt(format: HTML, pruneLength: 800)
               }
             }
             datePublished(formatString: "MMMM DD, YY HH:MM A")
             tags
+            slug
           }
         }
       }
